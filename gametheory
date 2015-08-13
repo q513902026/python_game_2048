@@ -1,0 +1,26 @@
+start:class self (object)
+         def __init__(self,value,x,y)
+         x [1,4] y[1,4]
+sui ji fu zhi liang ge  value = 2
+qi ta value = 0
+
+remove： 
+if input == '←'： for （X = 1， X = 4）：
+                   if x == 1:
+                             value(x) = value(x)
+                   else: 
+                         if value(x-1) == value(x) || value(x-1) == 0:
+                              value（x-1） = value（x）+value（x-1）
+                         else:
+                              value（x-1） = value（x-1）
+                              value(x) = 0
+ zhe ge  bian li xu yao zai lai yi ci (for*2)
+
+
+end:if value == 2048 
+    break 
+    print('you win')
+    
+    if all sefl.value != 0 and all self.value != 1024
+    break
+    print('you lose')
