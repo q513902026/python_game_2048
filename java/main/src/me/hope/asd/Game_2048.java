@@ -29,25 +29,26 @@ public class Game_2048 {
 			line[n.getX() - 1][n.getY() - 1] = n.getValue();
 		}
 
-		System.out.println("out:");
-		for (Num n : listn) {
+		//System.out.println("out:");
+		/*for (Num n : listn) {
 			System.out.println(n);
-		}
+		}*/
 		createNum(line);
 		createNum(line);
-
-		System.out.println("out2:");
-		for (Num n : listn) {
+		
+		
+		//System.out.println("out2:");
+		/*for (Num n : listn) {
 			System.out.println(n);
 		}
-		System.out.println("==-out-==");
-		System.out.print(draw2048(line));
+		System.out.println("==-out-==");*/
+		
 		/*
 		 * ==-out-== Y X 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0
 		 */
+		System.out.print(draw2048(line));
 		Scanner scan = new Scanner(System.in);
 		while (!GAME_FLAG) {
-
 			String reString = scan.next().toLowerCase();
 			if (reString.equalsIgnoreCase("exit")) {
 				break;
@@ -65,6 +66,7 @@ public class Game_2048 {
 				Game_2048.runCommand(listn, CommandType.D);
 			}
 			System.out.println(draw2048(line));
+			
 		}
 		System.out.println("请输入您的大名:");
 		String name = scan.next();
